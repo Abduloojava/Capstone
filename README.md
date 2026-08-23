@@ -1,6 +1,6 @@
 # Gym & Fitness App
 ## Table of Contents 
-(#Overview)
+*[Overview](#Overview)
 (##Built)
 (#Features)
 (#How to use)
