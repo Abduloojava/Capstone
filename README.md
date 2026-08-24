@@ -13,7 +13,6 @@
 - [HTML](#html)
 - [CSS](#css)
 - [JavaScript](#JavaScript)
-- [Figma](#https://www.figma.com/design/KAGunqzAFDd3cFax7Y10Dx/Explorations?node-id=0-1&t=9o6eDzOc3BtUBdsw-1)
 
 ## Features 
 Navbar - The navbar contain site menus
