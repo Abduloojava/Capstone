@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div  class="container form-card">
+       <h2>Register for Event</h2>
+      <form class="register-form" action="/register" method="POST">
+    <!-- Personal Information -->
+     
+    <fieldset class="log-form">
+      <legend>Profile</legend>
+      <p><label for="fullname">Full Name:<span aria-label="required">*</span></label>
+      <input type="text" id="fullname" name="fullname" 
+             minlength="3" maxlength="50" required></p>
+      <p><label for="email">Email Address: <span aria-label="required">*</span></label>
+      <input type="email" id="email" name="email" required></p>
+      
+      <p><label for="phone">Phone Number:<span aria-label="required">*</span></label>
+      <input type="tel" id="phone" name="phone"
+             pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
+             placeholder="(555) 123-4567"
+             title="Format: (555) 123-4567"></p>
+
+   <p><label for="gender">Gender <span aria-label="required">*</span></label></p> 
+    <p><input type="radio" id="male" name="gender" 
+             value="male">
+      <label for="male">Male</label></p>
+      
+      <p><input type="radio" id="female" name="gender" 
+             value="female">
+      <label for="female">Female</label></p>
+
+      <p><label for="birthdate">Date of Birth: <span aria-label="required">*</span></label>
+      <input type="date" id="birthdate" name="birthdate" 
+             min="1924-01-01" max="2008-12-31" required></p>
+
+         <p><label for="address">Home Address: <span aria-label="required">*</span></label></p>
+      <p><textarea id="address" name="address" rows="4" 
+                maxlength="200"></textarea></p>
+      
+      
+      <p><label for="sections">Sections: <span aria-label="required">*</span></label>
+      <select id="sections" name="sections" required>
+        <option value="">-- Select Section --</option>
+        <option value="us">Morning</option>
+        <option value="ca">Afternoon</option>
+        <option value="uk">Evening</option>
+      </select></p>
+    
+    <p>  <!-- Terms -->
+    <p><input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the Terms of Service</label></p>
+    
+    <p><input type="checkbox" id="newsletter" name="newsletter">
+    <label for="newsletter">Subscribe to newsletter</label></p>
+    </fieldset>
+    <!-- Keyboard Accessible -->
+      <button type="submit" id="index.html" onclick="submitForm()" class="form-login-button">Join Us</button>
+    </fieldset>
+    <p id="msg"></p>
+    </div>
+    </form>
+    <script src="minimal.js"></script>
+</body>
+</html>

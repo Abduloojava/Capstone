@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div  class="container form-card">
+    <h2>Login to Register for Event</h2>
+      <form class="login-form" action="/register" method="POST">
+    <!-- Personal Information -->
+    <fieldset class="log-form">
+        <legend>Login</legend>
+       <p><label for="email">Email: <span aria-label="required">*</span></label>
+        <input type="email" id="signupEmail" name="email" required
+               aria-required="true" 
+               aria-describedby="email-hint">
+        <span id="email-hint">We'll never share your email</span></p>
+      
+     <p> <label for="password">Password (min 8 characters):</label>
+      <input type="password" id="password" name="password"
+             minlength="8"
+             pattern="(?=.*\d)(?=.*[A-Z]).{8,}"
+             title="Min 8 chars, 1 uppercase, 1 number"
+             required></p>
+      
+   
+        <div class="form-login-options">
+        <label class="form-login-check">
+          <input type="checkbox" name="remember">
+          <span>Remember me</span>
+        </label>
+        <a class="form-login-link" href="#">Forgot password?</a>
+      </div>
+
+      
+      <!-- Keyboard Accessible -->
+      <button type="submit" id="login-form" onclick="submitForm()" class="form-login-button">Login</button>
+    
+    <p id="msg"></p>
+
+      <div class="form-login-divider">or</div>
+
+      <a class="form-login-secondary" href="#">Continue with Google</a>
+      
+
+    <p class="form-login-signup">Don’t have an account? <a href="#">Create Account</a></p>
+     </fieldset>
+    </form>
+</div>
+   <script src="minimal.js" defer></script>
+</body>
+</html>

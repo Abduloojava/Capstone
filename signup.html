@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  class="container form-card">
+      <h2>Create Your Account</h2>
+     <form id="signup-form" action="/register" method="POST">
+    <fieldset class="log-form">
+     <legend>Account Create</legend>
+     <p><label for="fullname">Full Name:</label>
+      <input type="text" id="signupName" name="fullname" 
+             minlength="3" maxlength="50" required></p>
+        <p><label for="email">Email: <span aria-label="required">*</span></label>
+        <input type="email" id="signupEmail" name="email" required
+               aria-required="true" 
+               aria-describedby="email-hint">
+        <span id="email-hint">We'll never share your email</span></p>
+      
+     <p> <label for="password">Password (min 8 characters):</label>
+      <input type="password" id="signupPassword" name="password"
+             minlength="8"
+             pattern="(?=.*\d)(?=.*[A-Z]).{8,}"
+             title="Min 8 chars, 1 uppercase, 1 number"
+             required></p>
+      
+      <p><label for="confirm">Confirm Password:</label>
+      <input type="password" id="signupPassword" name="confirm" 
+             minlength="8" required></p>
+     <!-- Keyboard Accessible -->
+      <button type="submit" id="signup-form" onclick="submitForm()" class="form-login-button">Sign Up</button>
+    </fieldset>
+    <p id="msg"></p>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a> </p>
+    </div>
+    <script src="minimal.js"  defer></script>
+</body>
+</html  >
