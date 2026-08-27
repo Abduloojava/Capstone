@@ -9,7 +9,7 @@
 <body>
        <div  class="container form-card">
        <h2>Register for Event</h2>
-      <form class="register-form" action="/register" method="POST">
+      <form class="register-form" action="index.html" method="GET">
     <!-- Personal Information -->
      
     <fieldset class="log-form">
@@ -27,14 +27,14 @@
              title="Format: (555) 123-4567"></p>
 
    <p><label for="gender">Gender <span aria-label="required">*</span></label></p> 
-    <p><input type="radio" id="male" name="gender" 
+    <div class="radio-group"><p><input type="radio" id="male" name="gender" 
              value="male">
       <label for="male">Male</label></p>
       
       <p><input type="radio" id="female" name="gender" 
              value="female">
       <label for="female">Female</label></p>
-
+</div>
       <p><label for="birthdate">Date of Birth: <span aria-label="required">*</span></label>
       <input type="date" id="birthdate" name="birthdate" 
              min="1924-01-01" max="2008-12-31" required></p>
