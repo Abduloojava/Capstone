@@ -1,4 +1,4 @@
-# Gym & Fitness App
+# Gym & Fitness
 ## Table of Contents 
 - [Overview](#Overview)
     - [Built](##Built)
